@@ -27,9 +27,8 @@ public class ContentViewer extends Fragment {
 
 
         cancel=view.findViewById(R.id.cancel);
-           cancel.setOnClickListener(v->{
-               getParentFragmentManager().popBackStack();
-           });
-       return view;
+        cancel.setOnClickListener(v-> getParentFragmentManager().popBackStack());
+
+        return view;
     }
 }

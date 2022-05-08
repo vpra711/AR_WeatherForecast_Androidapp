@@ -13,6 +13,7 @@ import android.transition.TransitionManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -47,8 +48,8 @@ public class Today extends Fragment {
         adapter.setItemClickListener(data -> {
             Toast.makeText(getContext(), "Done", Toast.LENGTH_SHORT).show();
             FragmentTransaction fragmentTransaction= getParentFragmentManager().beginTransaction();
+            fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
             fragmentTransaction.replace(R.id.today_container,new ContentViewer(),null);
-            fragmentTransaction.setCustomAnimations(R.anim.slide_up,R.anim.slide_up);
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         });

@@ -17,20 +17,12 @@ import com.ahamed.weatherforcasting.R;
 
 public class Tomorrow extends Fragment {
 
-//    ImageButton cancel;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View view= inflater.inflate(R.layout.fragment_tomorrow, container, false);
-
-//        cancel=view.findViewById(R.id.cancel);
-
-//        cancel.setOnClickListener(v->{
-//            FragmentTransaction fragmentTransaction= getParentFragmentManager().beginTransaction();
-//            fragmentTransaction.replace(R.id.content_container,new Today());
-//            fragmentTransaction.commit();
-//        });
         return view;
     }
 }
