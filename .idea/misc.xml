@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.108" />
+        <entry key="app/src/main/res/drawable/cancel_button_background.xml" value="0.115" />
         <entry key="app/src/main/res/drawable/ic_all_weather.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_augmented_reality.xml" value="0.1915" />
         <entry key="app/src/main/res/drawable/ic_bat.xml" value="0.108" />
+        <entry key="app/src/main/res/drawable/ic_cancel.xml" value="0.1055" />
         <entry key="app/src/main/res/drawable/ic_cloud_1.xml" value="0.108" />
         <entry key="app/src/main/res/drawable/ic_cloud_2.xml" value="0.1915" />
         <entry key="app/src/main/res/drawable/ic_cloud_medium.xml" value="0.108" />

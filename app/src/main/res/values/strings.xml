@@ -4,4 +4,5 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="content1">Blah blah blah blah blah what to write here tell me please Hello blank fragment Stop!</string>
+    <string name="cancelbutton">cancelButton</string>
 </resources>

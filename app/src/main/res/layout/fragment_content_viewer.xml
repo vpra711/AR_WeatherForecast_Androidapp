@@ -14,21 +14,27 @@
        android:id="@+id/relativeLayout"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
-       android:layout_margin="10dp">
+       android:layout_margin="10dp"
+       android:background="@color/white"
+       tools:ignore="UselessParent">
 
       <RelativeLayout
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           android:layout_marginTop="20dp"
-          android:layout_marginBottom="10dp"
-          android:background="@drawable/rounded_button">
-      </RelativeLayout>
+          android:layout_marginBottom="20dp"
+          android:backgroundTint="@color/blue"
+          android:background="@drawable/rounded_button"/>
+
       <ImageButton
           android:id="@+id/cancel"
-          android:layout_width="60dp"
-          android:layout_height="60dp"
-          android:background="@drawable/rounded_button"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:src="@drawable/ic_cancel"
           android:layout_centerHorizontal="true"
-          android:src="@drawable/ic_cancel" />
+          android:backgroundTint="@color/white"
+          android:elevation="20dp"
+          android:background="@drawable/cancel_button_background"
+          android:contentDescription="@string/cancelbutton"/>
    </RelativeLayout>
 </LinearLayout>
