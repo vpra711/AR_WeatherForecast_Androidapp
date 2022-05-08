@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content_container"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@color/white"
+    tools:context=".HomePage.ContentViewer">
+
+   <RelativeLayout
+       android:id="@+id/relativeLayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_margin="10dp">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="20dp"
+          android:layout_marginBottom="10dp"
+          android:background="@drawable/rounded_button">
+      </RelativeLayout>
+      <ImageButton
+          android:id="@+id/cancel"
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:background="@drawable/rounded_button"
+          android:layout_centerHorizontal="true"
+          android:src="@drawable/ic_cancel" />
+   </RelativeLayout>
+</LinearLayout>
