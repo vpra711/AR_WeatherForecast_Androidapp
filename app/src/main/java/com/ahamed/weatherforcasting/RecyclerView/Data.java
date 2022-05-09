@@ -11,4 +11,18 @@ public class Data {
         this.degree = degree;
         this.color=color;
     }
+
+    public int getColor() {
+        return color;
+    }
+
+    public String getDay() {
+        return day;
+    }
+    public String getDegree() {
+        return degree;
+    }
+    public int getImage() {
+        return image;
+    }
 }

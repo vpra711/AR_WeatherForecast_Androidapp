@@ -46,6 +46,14 @@
           android:src="@drawable/ic_search"
           android:backgroundTint="@color/white"/>
    </RelativeLayout>
+   <FrameLayout
+       android:id="@+id/ss"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
       <com.google.android.material.tabs.TabLayout
          android:id="@+id/tabLayout"
          android:layout_width="match_parent"
@@ -59,4 +67,6 @@
          android:id="@+id/viewPager"
          android:layout_width="match_parent"
          android:layout_height="match_parent"/>
+      </LinearLayout>
+   </FrameLayout>
 </LinearLayout>

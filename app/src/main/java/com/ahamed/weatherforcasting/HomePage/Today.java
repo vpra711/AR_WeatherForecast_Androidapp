@@ -37,7 +37,7 @@ public class Today extends Fragment {
         recyclerView=view.findViewById(R.id.recyclerView);
         ArrayList<Data> list=new ArrayList<>();
         list.add(new Data("Monday",R.drawable.ic_sun,"40",1));
-        list.add(new Data("TuesDay",R.drawable.ic_music_light,"50",2));
+        list.add(new Data("Tuesday",R.drawable.ic_music_light,"50",2));
         list.add(new Data("Wednesday",R.drawable.ic_thunder_cloud,"50",3));
 
         RecyclerViewAdapter adapter=new RecyclerViewAdapter(list,view.getContext());
@@ -46,10 +46,9 @@ public class Today extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext(),LinearLayoutManager.HORIZONTAL,false));
 
         adapter.setItemClickListener(data -> {
-            Toast.makeText(getContext(), "Done", Toast.LENGTH_SHORT).show();
             FragmentTransaction fragmentTransaction= getParentFragmentManager().beginTransaction();
             fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            fragmentTransaction.replace(R.id.today_container,new ContentViewer(),null);
+            fragmentTransaction.replace(R.id.ss,new ContentViewer(data),null);
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         });
